@@ -19,6 +19,7 @@ jobs:
           ruby-version: 3.0
           bundler-cache: true
       - name: Run Lint
+        run: bundle exec rubocop
 
   run-spec:
     runs-on: ubuntu-latest
