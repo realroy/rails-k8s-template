@@ -19,7 +19,7 @@ jobs:
           ruby-version: 3.0
           bundler-cache: true
       - name: Run Spec
-        run: rspec -fd
+        run: bundle exec rspec -fd
       # Add or Replace any other security checks here
 #       - name: Run security checks
 #         run: |
