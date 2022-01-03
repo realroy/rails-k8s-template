@@ -3,11 +3,11 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 # This workflow will download a prebuilt Ruby version, install dependencies, and  run linters
-name: Rails - Install dependencies and run linters
+name: Rails - Code Quality
 
 on: [push, pull_request]
 jobs:
-  run-lint:
+  run-spec:
     runs-on: ubuntu-latest
     services:
       # Label used to access the service container
