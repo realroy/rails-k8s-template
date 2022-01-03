@@ -37,6 +37,9 @@ jobs:
           ruby-version: 3.0
           bundler-cache: true
       - name: Run Spec
+        env:
+          RAILS_ENV: test
+          PGHOST: localhost
         run: bundle exec rspec -fd
       # Add or Replace any other security checks here
 #       - name: Run security checks
