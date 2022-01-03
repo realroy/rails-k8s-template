@@ -1,4 +1,4 @@
-FROM ruby:3.0.3-alpine3.15
+FROM ruby:3.0.0-alpine3.15
 
 RUN apk add --no-cache --update imagemagick python2-dev python2 build-base gcc bash cmake npm yarn tzdata nodejs postgresql-dev git
 ENV TZ=Asia/Bangkok
