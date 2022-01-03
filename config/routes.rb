@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resource :home, only: :index
+  resource :home, only: :show, path: '/', controller: 'home'
 
-  root "home#index"
+  root "home#show"
 end
