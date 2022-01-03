@@ -40,7 +40,7 @@ jobs:
         env:
           RAILS_ENV: test
           PGHOST: localhost
-          PGUSER: rails_7_k8s
+          PGUSER: postgres
           PGPASSWORD: postgres
         run: bundle exec rspec -fd
       # Add or Replace any other security checks here
